@@ -1,0 +1,52 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing and tooling cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local vector database
+chroma_db/
+
+# Personal memory and local runtime data
+storage/user_memory.json
+
+# Runtime logs and generated outputs
+*.log
+mcp_agent_output.txt
+mcp_test_output.txt
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local session files
+:memory:.ses
+
+# Local learning documents
+data/
+
+# Personal memory data
+storage/user_memory.json
+
+# Python cache
+__pycache__/
+**/__pycache__/
+old_agent.py

@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  ai-study-agent:
+    image: ai-study-agent:latest
+    container_name: ai-study-agent
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./chroma_db:/app/chroma_db
+      - ./storage:/app/storage
